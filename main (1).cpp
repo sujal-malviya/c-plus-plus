@@ -1,18 +1,29 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
 #include <iostream>
 using namespace std;
+int main()
+{
+    int n;
+    cin >>n;
+    int i=1;
+    while(i<=n)
+    {
+        int j=1;
+        while(j<=n)
+        {
+            cout<<n-j+1;
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
 
-int main() {
-
-  int first_number, second_number, sum;
-    
-  cout << "Enter two integers: ";
-  cin >> first_number >> second_number;
-
-  // sum of two numbers in stored in variable sumOfTwoNumbers
-  sum = first_number + second_number;
-
-  // prints sum 
-  cout << first_number << " + " <<  second_number << " = " << sum;     
-
-  return 0;
+    return 0;
 }
